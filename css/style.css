@@ -49,20 +49,36 @@ main {
     padding: 0 15%;
 }
 
+p {
+    opacity: 0.7;
+}
+
 .home-content {
     max-width: 60%;
 }
 
 .home-content h1 {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 600;
 }
 
 .home-content h2 {
     font-size: 2rem;
     font-weight: 300;
+    margin-bottom: 1.5rem;
 }
 
-.social-media {
-    
+.social-media img {
+    width: 5%;
+    height: auto;
+    margin: 1.5rem 0.3rem;
+}
+
+.social-media a {
+    opacity: 0.6;
+}
+
+.social-media a:hover {
+    opacity: 0.9;
+    transition: 0.3s;
 }
