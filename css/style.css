@@ -1,11 +1,12 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(90deg, hsla(263, 84%, 22%, 1) 0%, hsla(205, 67%, 10%, 1) 100%);
-
 }
 
 /*HEADER*/
@@ -37,4 +38,31 @@ nav a {
 
 nav a:hover, .active {
     color: rgb(179, 107, 246);
+}
+
+/*MAIN*/
+main {
+    color: #ededed;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 15%;
+}
+
+.home-content {
+    max-width: 60%;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.home-content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.social-media {
+    
 }
