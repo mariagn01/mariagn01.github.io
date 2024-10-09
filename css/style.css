@@ -10,12 +10,12 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, hsla(263, 84%, 22%, 1) 0%, hsla(205, 67%, 10%, 1) 100%);
+    background: linear-gradient(90deg, #2d0967 0%, #081c2b 100%);
 }
 
 /*HEADER*/
 header {
-    position: fixed;
+    /*position: fixed;*/
     top: 1%;
     left: 0;
     width: 100%;
@@ -46,9 +46,9 @@ nav a:hover, .active {
 
 /*MAIN*/
 main {
-    color: #ededed;
     display: flex;
     flex-direction: column;
+    color: #ededed;
     align-items: center;
     height: 100vh;
     margin-top: 20vh;
@@ -58,22 +58,22 @@ p {
     opacity: 0.7;
 }
 
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
 .home-content {
     width: 90%;
     height: auto;
     padding: 0 15%;
     align-items: center;
-}
-
-.home-content h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-}
-
-.home-content h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
 }
 
 .social-media img {
@@ -89,6 +89,44 @@ p {
 .social-media a:hover {
     opacity: 0.9;
     transition: 0.3s;
+}
+
+.card-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-container a {
+    text-decoration: none;
+    color: #ededed;
+}
+
+.card-container a:hover {
+    text-decoration: none;
+    color: #ededed;
+    background: radial-gradient(circle, 
+    hsla(277, 67%, 77%, 0.5) 2%, 
+    hsla(244, 68%, 78%, 0.5) 20%, 
+    hsla(263, 84%, 22%, 0.5) 100%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 400px;
+    height: 400px;
+    border: solid;
+    border-color: #c7c7c765;
+}
+
+.card img { 
+    max-width: 50%;
+    margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 .divider {
