@@ -6,6 +6,7 @@
     <title>Maria's website</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
  <div class="flex justify-center items-center flex-col min-h-screen bg-indigo-50">
@@ -13,12 +14,120 @@
     <h2 class="text-xl md:text-2xl mb-8 text-gray-700">Software Engineering Student</h2>
     <div class="flex space-x-4 flex-row">
         <a href="https://github.com/mariagn01" target="_blank">
-            <img src="images/github.svg" alt="github logo" class="hover:opacity-50 transition-colors mr-1"></a>
+            <img src="images/github.svg" alt="github logo" class="hover:opacity-50 transition-opacity mr-1"></a>
         <a href="https://www.linkedin.com/in/mgnielsen01/" target="_blank">
-            <img src="images/linkedin.svg" alt="linkedin logo" class="hover:opacity-50 transition-colors"></a>
+            <img src="images/linkedin.svg" alt="linkedin logo" class="hover:opacity-50 transition-opacity"></a>
         <a href="https://www.oslomet.no/studier/tkd/dataingenior" target="_blank">
-            <img src="images/education.svg" alt="education cap logo" class="hover:opacity-50 transition-colors"></a>
+            <img src="images/education.svg" alt="education cap logo" class="hover:opacity-50 transition-opacity"></a>
     </div>
  </div>
+
+ <!--About me-->
+ <section class="py-20 px-4 md:px-8 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+        I’m a software engineering student from Oslo, currently in my second year, working on developing my technical understanding and skills. I also have experience in web design from my previous bachelor’s degree in media and communication.
+    </p>
+  </section>
+
+<!--Skills-->
+  <section class="py-20 px-4 md:px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center">Technical skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <i data-lucide="code-xml" class="text-indigo-600 mr-3 w-6 h-6"></i>
+            <h3 class="text-xl font-semibold">Programming</h3>
+          </div>
+          <p class="text-gray-600">Java, Python, JavaScript, HTML/CSS, SQL</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <i data-lucide="library" class="text-indigo-600 mr-3 w-6 h-6"></i>
+            <h3 class="text-xl font-semibold">Frameworks and Libraries</h3>
+          </div>
+          <p class="text-gray-600">Spring Boot, jQuery, Bootstrap, Tailwind</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <i data-lucide="wrench" class="text-indigo-600 mr-3 w-6 h-6"></i>
+            <h3 class="text-xl font-semibold">Development Tools</h3>
+          </div>
+          <p class="text-gray-600">IntelliJ, Visual Studio Code, Git, Github</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+     <!-- Projects -->
+     <section class="py-20 px-4 md:px-8 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Weather Dashboard -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <img 
+              src="/images/weather.jpg"
+              alt="Weather"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="text-xl font-semibold">Weather App</h3>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/mariagn01/weather-app" class="text-gray-600 hover:text-blue-600 transition-colors flex items-center">
+                    <i data-lucide="external-link" class="w-5 h-5 mr-1"></i> View Project 
+                  </a>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+                A weather app that provides real-time data for the user's current location or any 
+                specified city using the OpenWeather API. Key features include automatic location 
+                detection, a search function, input validation, and error handling.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Javascript</span>
+                <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">HTML</span>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Movie Ticketing System -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+            <img 
+              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=800"
+              alt="Movie"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="text-xl font-semibold">Movie Ticketing System</h3>
+                <div class="flex space-x-2">
+                  <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors flex items-center">
+                    <i data-lucide="external-link" class="w-5 h-5 mr-1"></i> View Project
+                  </a>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+                A full-stack web application developed as part of a Bachelor's course project.
+                 Key features include purchasing, viewing, and deleting tickets with server-side 
+                data storage using an in-memory database, responsive design, and error handling.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Spring Boot</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Java</span>
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Javascript</span>
+                <span class="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
