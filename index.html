@@ -5,92 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria's website</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="home-content">
-            <h1>Maria Granli</h1>
-            <h2>Software Engineering Student</h2>
-            <p>I’m a second-year software engineering student from Oslo, Norway. I’m currently working on developing my technical understanding and skills. 
-                I also have competence in user experience and web design from my previous bachelor’s degree in media and communication. My favorite courses so far have been programming, 
-                web development and algorithms. I’m interested in how we can use technology to make a positive impact on society and people’s lives.</p>
-            <div class="social-media">
-                <a href="https://github.com/mariagn01"><img src="images/github.png" alt="Github"></a>
-                <!--Icon created by Freepik - Flaticon-->
-                <a href="https://www.linkedin.com/in/mgnielsen01/"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                <!--Icon created by riajulislam - Flaticon-->
-                <a href="https://www.oslomet.no/studier/tkd/dataingenior"><img src="images/degree.png" alt="Degree"></a>
-                <!--Icon created by afif fudin - Flaticon-->
-                <a href="https://www.goodreads.com/user/show/126549560-maria-granli"><img src="images/goodreads.png" alt="Goodreads"></a>
-                <!--Icon created by riajulislam - Flaticon-->
-            </div>
-        </section>
-
-        <div class="divider"><hr></div>
-
-        <section id="projects" class="home-content">
-            <h2>Projects</h2>
-            <div class="card-container">
-                <a href="https://github.com/mariagn01/weather-app">
-                <div class="card">
-                    <img src="images/clouds.png">
-                    <div class="card-content">
-                        <h3>Weather App</h3>
-                        <p>Displays real-time weather data from the OpenWeather API for your current location, or by searching for any city.</p>
-                        <div class="row">
-                            <div class="card-item">HTML</div>
-                            <div class="card-item">CSS</div>
-                            <div class="card-item">JavaScript</div>
-                            <div class="card-item">API</div>
-                        </div>
-                    </div>
-                </div>
-                </a> 
-                <a href="https://github.com/mariagn01/movie-tickets"> 
-                    <div class="card">
-                    <img src="images/movie.png">
-                    <div class="card-content">
-                        <h3>Movie Tickets</h3>
-                        <p>A fullstack web application that allows users to order movie tickets, based on one of my course projects.</p>
-                        <div class="row">
-                            <div class="card-item">SpringBoot</div>
-                            <div class="card-item">Java</div>
-                            <div class="card-item">H2</div>
-                            <div class="card-item">JavaScript</div>
-                        </div>
-                        <div class="row">
-                            <div class="card-item">HTML</div>
-                            <div class="card-item">CSS</div>
-                            <div class="card-item">Bootstrap</div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-        </section>
-
-        <div class="divider"><hr></div>
-    
-        <section id="resume" class="home-content">
-            <h2>Resume</h2>
-            <p>Still working on this part</p>
-        </section>
-
-        <div class="divider"><hr></div>
-    
-        <section id="contact" class="home-content">
-            <h2>Contact</h2>
-            <p>Feel free to connect with me or send me a message on <a href="https://www.linkedin.com/in/mgnielsen01/">LinkedIn</a></p>
-        </section>
-    </main>
+ <div class="flex justify-center items-center flex-col min-h-screen bg-indigo-50">
+    <h1 class="text-5xl md:text-7xl font-bold mb-4">Maria Granli</h1>
+    <h2 class="text-xl md:text-2xl mb-8 text-gray-700">Software Engineering Student</h2>
+    <div class="flex space-x-4 flex-row">
+        <a href="https://github.com/mariagn01" target="_blank">
+            <img src="images/github.svg" alt="github logo" class="hover:opacity-50 transition-colors mr-1"></a>
+        <a href="https://www.linkedin.com/in/mgnielsen01/" target="_blank">
+            <img src="images/linkedin.svg" alt="linkedin logo" class="hover:opacity-50 transition-colors"></a>
+        <a href="https://www.oslomet.no/studier/tkd/dataingenior" target="_blank">
+            <img src="images/education.svg" alt="education cap logo" class="hover:opacity-50 transition-colors"></a>
+    </div>
+ </div>
 </body>
 </html>
