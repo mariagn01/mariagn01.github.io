@@ -11,7 +11,7 @@ export default {
           'jersey': ['"Jersey 10"'],
         },
         colors: {
-          'retro-beige': '#eee4e1',
+          'pinkbeige': '#eee4e1',
           'black': '#000000',
         },
         animation: {
