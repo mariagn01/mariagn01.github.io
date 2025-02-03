@@ -2,13 +2,13 @@
 export default {
     content: [
       "./index.html",
-      "./index2.html",
       "./**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
       extend: {
         fontFamily: {
           'pixel': ['"Press Start 2P"', 'cursive'],
+          'jersey': ['"Jersey 10"'],
         },
         colors: {
           'retro-beige': '#F5F5DC',
