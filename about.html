@@ -1,30 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#eee4e1]">
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("page").classList.remove("translate-x-full");
+      });
+
+      function navigateLeft(event, url) {
+        event.preventDefault();
+        const page = document.getElementById("page");
+
+        // Skyver ut til venstre
+        page.classList.add("-translate-x-full");
+
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500); // Matcher transition duration
+      }
+
+      function navigateRight(event, url) {
+        event.preventDefault();
+        const page = document.getElementById("page");
+
+        // Skyver ut til høyre
+        page.classList.add("translate-x-full");
+
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500);
+      }
+    </script>
+  </head>
+  <body class="bg-[#eee4e1] relative overflow-hidden">
     <nav class="fixed left-0 right-0 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-          <a href="index.html" class="text-sm sm:text-base hover:text-gray-600">&lt; HOME</a>
-          <div class="space-x-4 sm:space-x-6">
-            <a href="skills.html" class="text-sm hover:text-gray-600">NEXT ></a>
-          </div>
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="index.html"
+          class="text-sm sm:text-base hover:text-gray-600"
+          onclick="navigateRight(event, 'index.html')"
+          >&lt; HOME</a
+        >
+        <div class="space-x-4 sm:space-x-6">
+          <a
+            href="skills.html"
+            class="text-sm hover:text-gray-600"
+            onclick="navigateLeft(event, 'skills.html')"
+            >NEXT ></a
+          >
         </div>
-      </nav>
-    <section id="about" class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+      </div>
+    </nav>
+    <div
+      id="page"
+      class="absolute top-0 left-0 w-screen h-screen flex items-center justify-center shadow-lg transform transition-transform duration-500 translate-x-full pointer-events-none"
+    >
+      <section
+        id="about"
+        class="min-h-screen flex items-center justify-center p-4 sm:p-8"
+      >
         <div class="container max-w-4xl mx-auto">
           <h2 class="text-2xl sm:text-3xl mb-8">> ABOUT ME</h2>
           <div class="space-y-6 text-sm sm:text-base">
             <p class="leading-relaxed font-jersey">
-                I’m a software engineering student from Oslo, currently in my second year, working on developing my technical understanding and skills. I also have experience in web development and graphic design from my previous bachelor’s degree in media and communication.
+              I’m a software engineering student from Oslo, currently in my
+              second year, working on developing my technical understanding and
+              skills. I also have experience in web development and graphic
+              design from my previous bachelor’s degree in media and
+              communication.
             </p>
           </div>
         </div>
       </section>
-</body>
+    </div>
+  </body>
 </html>

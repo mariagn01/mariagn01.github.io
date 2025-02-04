@@ -2,13 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Maria's website</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+      const page = document.getElementById("page");
+      if (page) {
+        page.classList.remove("translate-x-full");}
+      });
+
+      function navigateLeft(event, url) {
+        event.preventDefault();
+        const page = document.getElementById("page");
+
+        // Skyver ut til venstre
+        page.classList.add("-translate-x-full");
+
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500); // Matcher transition duration
+      }
+
+      function navigateRight(event, url) {
+        event.preventDefault();
+        const page = document.getElementById("page");
+
+        // Skyver ut til høyre
+        page.classList.add("translate-x-full");
+
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500);
+      }
+  </script>
   </head>
-  <body class="bg-[#eee4e1] text-black font-press-start">
+  <body class="bg-[#eee4e1] text-black font-press-start relative overflow-hidden">
+    <div id="page"
+         class="absolute top-0 left-0 w-screen h-screen transform transition-transform duration-500 translate-x-full">
     <div class="min-h-screen flex items-center justify-center sm:justify-start">
       <div class="container max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
         <!-- Left Column -->
@@ -33,7 +65,8 @@
         <!-- Right Column -->
         <div class="flex items-center md:justify-center sm:justify-start">
           <nav class="md:space-y-6 sm:space-y-2">
-            <a href="about.html" class="relative text-black hover:text-gray-600 transition-colors duration-300 py-2 block menu-item">
+            <a href="about.html" class="relative text-black hover:text-gray-600 transition-colors duration-300 py-2 block menu-item"
+            onclick="navigateLeft(event, 'about.html')">
               ABOUT
             </a>            
             <a href="skills.html" class="relative text-black hover:text-gray-600 transition-colors duration-300 py-2 block menu-item">
@@ -49,6 +82,7 @@
           </nav>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
