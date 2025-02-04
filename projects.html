@@ -56,10 +56,13 @@
     <nav class="top-0 left-0 right-0 p-4 relative z-10">
       <div class="container mx-auto flex justify-between items-center">
         <a href="skills.html" class="text-sm sm:text-base hover:text-gray-600"
+        onclick="navigateRight(event, 'skills.html')"
           >&lt; PREV</a
         >
         <div class="space-x-4 sm:space-x-6">
-          <a href="contact.html" class="text-sm hover:text-gray-600">NEXT ></a>
+          <a href="contact.html" class="text-sm hover:text-gray-600"
+          onclick="navigateLeft(event, 'contact.html')"
+          >NEXT ></a>
         </div>
       </div>
     </nav>
