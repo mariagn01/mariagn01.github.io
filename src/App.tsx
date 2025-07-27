@@ -1,10 +1,12 @@
 import './App.css'
+import Hero from './sections/hero'
 
 function App() {
 
   return (
-    <h1>Hei verden!</h1>
-  )
+    <Hero />
+  );
 }
+
 
 export default App
