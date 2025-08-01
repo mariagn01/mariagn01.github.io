@@ -1,6 +1,7 @@
 import "./App.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Navbar } from "./sections/Navbar";
+import { Skills } from "./sections/Skills";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { WorkExperience } from "./sections/Work";
@@ -21,6 +22,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Hero />
+      <Skills />
       <Projects />
       <WorkExperience />
     </ThemeProvider>
