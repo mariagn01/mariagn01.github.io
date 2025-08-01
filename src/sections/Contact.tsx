@@ -27,7 +27,16 @@ export function Contact() {
         }}
       >
         <h2>Contact</h2>
-        <Typography variant="h6" align="center" sx={{ mb: 4, opacity: 0.9 }}>
+        <Typography
+          variant="h6"
+          align="center"
+          sx={{
+            mb: 4,
+            opacity: 0.9,
+            color: "text.primary",
+            fontSize: { xs: "1.2rem", md: "1.25rem" },
+          }}
+        >
           Feel free to send me an email or connect with me!
         </Typography>
         <Box
