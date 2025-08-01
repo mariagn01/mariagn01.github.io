@@ -52,7 +52,7 @@ export function Projects() {
               <CardMedia
                 component="img"
                 height="200"
-                image="src/assets/weather.jpg"
+                image="/weather.jpg"
                 alt="Weather App"
               />
               <CardContent>
@@ -115,7 +115,7 @@ export function Projects() {
               <CardMedia
                 component="img"
                 height="200"
-                image="src/assets/movietickets.png"
+                image="/movietickets.png"
                 alt="Movie Tickets App"
                 sx={{ objectPosition: "top" }}
               />

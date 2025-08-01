@@ -8,7 +8,15 @@ export function Navbar() {
       sx={{ bgcolor: "#fcf7f8", boxShadow: 0 }}
     >
       <Toolbar sx={{ justifyContent: "flex-end" }}>
-        <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
+        <Box
+          sx={{
+            display: {
+              xs: "none",
+              md: "flex",
+            },
+            gap: 2,
+          }}
+        >
           {[
             { label: "About", id: "about" },
             { label: "Skills", id: "skills" },
@@ -28,6 +36,7 @@ export function Navbar() {
                   });
                 }
               }}
+              sx={{ outline: "none", "&:focus": { outline: "none" } }}
             >
               {item.label}
             </Button>

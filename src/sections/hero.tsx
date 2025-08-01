@@ -48,7 +48,11 @@ export function Hero() {
               .getElementById("skills")
               ?.scrollIntoView({ behavior: "smooth" })
           }
-          sx={{ color: "gray" }}
+          sx={{
+            color: "gray",
+            outline: "none",
+            "&:focus": { outline: "none" },
+          }}
         >
           <KeyboardArrowDown fontSize="large" />
         </IconButton>
