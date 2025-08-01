@@ -5,6 +5,7 @@ import { Skills } from "./sections/Skills";
 import { Hero } from "./sections/hero";
 import { Projects } from "./sections/Projects";
 import { WorkExperience } from "./sections/Work";
+import { Contact } from "./sections/Contact";
 
 const theme = createTheme({
   palette: {
@@ -23,8 +24,9 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
-      <Projects />
       <WorkExperience />
+      <Projects />
+      <Contact />
     </ThemeProvider>
   );
 }

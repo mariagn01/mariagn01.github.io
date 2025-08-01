@@ -5,7 +5,7 @@ export function Navbar() {
     <AppBar
       position="fixed"
       color="transparent"
-      sx={{ bgcolor: "#fcf7f8", boxShadow: 0 }}
+      sx={{ bgcolor: "transparent", boxShadow: 0 }}
     >
       <Toolbar sx={{ justifyContent: "flex-end" }}>
         <Box
@@ -20,8 +20,8 @@ export function Navbar() {
           {[
             { label: "About", id: "about" },
             { label: "Skills", id: "skills" },
-            { label: "Projects", id: "projects" },
             { label: "Experience", id: "experience" },
+            { label: "Projects", id: "projects" },
             { label: "Contact", id: "contact" },
           ].map((item) => (
             <Button

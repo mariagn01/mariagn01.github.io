@@ -31,8 +31,8 @@ export function Projects() {
           display: "flex",
           alignItems: "flex-start",
           flexDirection: "column",
-          mt: 10,
-          mb: 20,
+          mt: 20,
+          mb: 30,
         }}
       >
         <h2>Personal projects</h2>

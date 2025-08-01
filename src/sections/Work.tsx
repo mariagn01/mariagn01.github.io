@@ -6,7 +6,7 @@ export function WorkExperience() {
     <Box
       id="experience"
       sx={{
-        bgcolor: "#fefefe",
+        bgcolor: "background.default",
         width: "100vw",
         height: "100%",
         position: "relative",
@@ -22,7 +22,7 @@ export function WorkExperience() {
           display: "flex",
           alignItems: "flex-start",
           flexDirection: "column",
-          mt: 10,
+          mt: 20,
           mb: 20,
         }}
       >

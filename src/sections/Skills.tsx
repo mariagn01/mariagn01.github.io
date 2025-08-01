@@ -50,7 +50,7 @@ export function Skills() {
           alignItems: "flex-start",
           flexDirection: "column",
           mt: 20,
-          mb: 20,
+          mb: 30,
         }}
       >
         <h2>Technical skills</h2>
