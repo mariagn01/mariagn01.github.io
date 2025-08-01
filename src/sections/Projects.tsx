@@ -8,7 +8,7 @@ import {
   Chip,
   Button,
 } from "@mui/material";
-import { GitHub, Launch } from "@mui/icons-material";
+import { GitHub } from "@mui/icons-material";
 
 export function Projects() {
   return (

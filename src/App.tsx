@@ -2,7 +2,7 @@ import "./App.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Navbar } from "./sections/Navbar";
 import { Skills } from "./sections/Skills";
-import { Hero } from "./sections/Hero";
+import { Hero } from "./sections/hero";
 import { Projects } from "./sections/Projects";
 import { WorkExperience } from "./sections/Work";
 
