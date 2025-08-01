@@ -4,6 +4,7 @@ import { Work, CalendarToday, Code } from "@mui/icons-material";
 export function WorkExperience() {
   return (
     <Box
+      id="experience"
       sx={{
         bgcolor: "#fefefe",
         width: "100vw",

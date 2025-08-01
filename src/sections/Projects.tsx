@@ -13,6 +13,7 @@ import { GitHub, Launch } from "@mui/icons-material";
 export function Projects() {
   return (
     <Box
+      id="projects"
       sx={{
         bgcolor: "#fefefe",
         width: "100vw",

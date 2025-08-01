@@ -9,21 +9,27 @@ export function Navbar() {
     >
       <Toolbar sx={{ justifyContent: "flex-end" }}>
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
-          {["About", "Projects", "Experience", "Skills", "Contact"].map(
-            (item) => (
-              <Button
-                key={item}
-                color="inherit"
-                onClick={() =>
-                  document
-                    .getElementById(item.toLowerCase())
-                    ?.scrollIntoView({ behavior: "smooth" })
+          {[
+            { label: "About", id: "about" },
+            { label: "Projects", id: "projects" },
+            { label: "Experience", id: "experience" },
+          ].map((item) => (
+            <Button
+              key={item.label}
+              color="inherit"
+              onClick={() => {
+                const element = document.getElementById(item.id);
+                if (element) {
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
                 }
-              >
-                {item}
-              </Button>
-            )
-          )}
+              }}
+            >
+              {item.label}
+            </Button>
+          ))}
         </Box>
       </Toolbar>
     </AppBar>

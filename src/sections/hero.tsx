@@ -3,6 +3,7 @@ import { Container, Typography } from "@mui/material";
 export function Hero() {
   return (
     <Container
+      id="about"
       maxWidth="lg"
       sx={{
         display: "flex",
