@@ -11,8 +11,10 @@ export function Navbar() {
         <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
           {[
             { label: "About", id: "about" },
+            { label: "Skills", id: "skills" },
             { label: "Projects", id: "projects" },
             { label: "Experience", id: "experience" },
+            { label: "Contact", id: "contact" },
           ].map((item) => (
             <Button
               key={item.label}

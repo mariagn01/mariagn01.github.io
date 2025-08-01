@@ -29,7 +29,14 @@ export function WorkExperience() {
         <h2>Work experience</h2>
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
           <Box sx={{ flex: { xs: "1 1 100%", md: "1 1 calc(50% - 16px)" } }}>
-            <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
+            <Paper
+              elevation={0}
+              sx={{
+                p: 4,
+                height: "100%",
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
+              }}
+            >
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
                 <Code sx={{ color: "primary.main", mr: 2 }} />
                 <Typography variant="h5" component="h3">
@@ -61,7 +68,14 @@ export function WorkExperience() {
             </Paper>
           </Box>
           <Box sx={{ flex: { xs: "1 1 100%", md: "1 1 calc(50% - 16px)" } }}>
-            <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
+            <Paper
+              elevation={0}
+              sx={{
+                p: 4,
+                height: "100%",
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
+              }}
+            >
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
                 <Work sx={{ color: "primary.main", mr: 2 }} />
                 <Typography variant="h5" component="h3">

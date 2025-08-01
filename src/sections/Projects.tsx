@@ -42,7 +42,11 @@ export function Projects() {
               sx={{
                 height: "100%",
                 transition: "transform 0.3s ease-in-out",
-                "&:hover": { transform: "translateY(-8px)" },
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                  boxShadow: "0 16px 24px rgba(0, 0, 0, 0.15)",
+                },
               }}
             >
               <CardMedia
@@ -101,7 +105,11 @@ export function Projects() {
               sx={{
                 height: "100%",
                 transition: "transform 0.3s ease-in-out",
-                "&:hover": { transform: "translateY(-8px)" },
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                  boxShadow: "0 16px 24px rgba(0, 0, 0, 0.15)",
+                },
               }}
             >
               <CardMedia
