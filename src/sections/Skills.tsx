@@ -33,7 +33,7 @@ export function Skills() {
     <Box
       id="skills"
       sx={{
-        bgcolor: "#fefefe",
+        bgcolor: { xs: "bgcolor.default", md: "#fefefe" },
         width: "100vw",
         height: "100%",
         position: "relative",
@@ -47,10 +47,11 @@ export function Skills() {
         maxWidth="lg"
         sx={{
           display: "flex",
-          alignItems: "flex-start",
+          alignItems: { xs: "center", md: "flex-start" },
           flexDirection: "column",
-          mt: 20,
-          mb: 30,
+          mt: { xs: 5, md: 20 },
+          mb: { xs: 15, md: 30 },
+          px: { xs: 3, sm: 4, md: 3 },
         }}
       >
         <h2>Technical skills</h2>
@@ -81,7 +82,13 @@ export function Skills() {
                     {category.title}
                   </Typography>
                 </Box>
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: { xs: 0.5, md: 1 },
+                  }}
+                >
                   {category.skills.map((skill) => (
                     <Chip
                       key={skill}

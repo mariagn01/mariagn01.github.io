@@ -20,19 +20,21 @@ export function WorkExperience() {
         maxWidth="lg"
         sx={{
           display: "flex",
-          alignItems: "flex-start",
+          alignItems: { xs: "center", md: "flex-start" },
           flexDirection: "column",
-          mt: 20,
-          mb: 20,
+          mt: { xs: 0, md: 20 },
+          mb: { xs: 10, md: 30 },
+          px: { xs: 3, sm: 4, md: 3 },
         }}
       >
         <h2>Work experience</h2>
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: { xs: 10, md: 4 } }}>
           <Box sx={{ flex: { xs: "1 1 100%", md: "1 1 calc(50% - 16px)" } }}>
             <Paper
               elevation={0}
               sx={{
                 p: 4,
+                pb: { xs: 2, md: 3, lg: 4 },
                 height: "100%",
                 boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
               }}
@@ -46,7 +48,7 @@ export function WorkExperience() {
               <Typography
                 variant="h6"
                 color="text.secondary"
-                sx={{ mb: 1, fontSize: 18 }}
+                sx={{ mb: 1, fontSize: { xs: 16, md: 18 } }}
               >
                 Summer internship at Bouvet ASA
               </Typography>
@@ -72,6 +74,7 @@ export function WorkExperience() {
               elevation={0}
               sx={{
                 p: 4,
+                pb: { xs: 2, md: 3, lg: 4 }, // Progressive increase
                 height: "100%",
                 boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
               }}
@@ -85,7 +88,7 @@ export function WorkExperience() {
               <Typography
                 variant="h6"
                 color="text.secondary"
-                sx={{ mb: 1, fontSize: 18 }}
+                sx={{ mb: 1, fontSize: { xs: 16, md: 18 } }}
               >
                 Norwegian Security Authority (NSM)
               </Typography>
@@ -104,7 +107,14 @@ export function WorkExperience() {
             </Paper>
           </Box>
         </Box>
-        <Typography sx={{ mt: 15, mb: 5, color: "text.secondary" }}>
+        <Typography
+          sx={{
+            mt: 15,
+            mb: { xs: 0, md: 5 },
+            color: "text.secondary",
+            px: { xs: 2, md: 0 },
+          }}
+        >
           Only work experience relevant to my ongoing degree is listed here.
           Feel free to contact me for my full CV.
         </Typography>

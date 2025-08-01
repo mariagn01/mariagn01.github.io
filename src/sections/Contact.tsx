@@ -22,8 +22,8 @@ export function Contact() {
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
-          mt: 20,
-          mb: 20,
+          mt: { xs: 5, md: 20 },
+          mb: { xs: 15, md: 20 },
         }}
       >
         <h2>Contact</h2>

@@ -15,7 +15,7 @@ export function Projects() {
     <Box
       id="projects"
       sx={{
-        bgcolor: "#fefefe",
+        bgcolor: { xs: "bgcolor.default", md: "#fefefe" },
         width: "100vw",
         height: "100%",
         position: "relative",
@@ -29,10 +29,11 @@ export function Projects() {
         maxWidth="lg"
         sx={{
           display: "flex",
-          alignItems: "flex-start",
+          alignItems: { xs: "center", md: "flex-start" },
           flexDirection: "column",
-          mt: 20,
-          mb: 30,
+          mt: { xs: 5, md: 20 },
+          mb: { xs: 15, md: 30 },
+          px: { xs: 3, sm: 4, md: 3 },
         }}
       >
         <h2>Personal projects</h2>
@@ -139,7 +140,13 @@ export function Projects() {
                     alignItems: "center",
                   }}
                 >
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: { xs: 0.5, md: 1 },
+                    }}
+                  >
                     {[
                       "Java",
                       "JavaScript",
@@ -163,7 +170,7 @@ export function Projects() {
                     onClick={() =>
                       window.open("https://github.com/mariagn01/movie-tickets")
                     }
-                    sx={{ mr: 2 }}
+                    sx={{ mr: { xs: 1, md: 2 }, px: { xs: 2, md: 1 } }}
                   >
                     View
                   </Button>
