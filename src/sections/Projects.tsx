@@ -16,7 +16,7 @@ export function Projects() {
       sx={{
         bgcolor: "#fefefe",
         width: "100vw",
-        mt: 20,
+        height: "100%",
         position: "relative",
         left: "50%",
         right: "50%",
@@ -34,7 +34,7 @@ export function Projects() {
           pb: 10,
         }}
       >
-        <h2>Projects</h2>
+        <h2>Personal projects</h2>
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
           <Box sx={{ flex: { xs: "1 1 100%", md: "1 1 calc(50% - 16px)" } }}>
             <Card

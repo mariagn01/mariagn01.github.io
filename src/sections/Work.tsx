@@ -1,0 +1,99 @@
+import { Box, Container, Paper, Typography } from "@mui/material";
+import { Work, CalendarToday, Code } from "@mui/icons-material";
+
+export function WorkExperience() {
+  return (
+    <Box
+      sx={{
+        bgcolor: "#fefefe",
+        width: "100vw",
+        height: "100%",
+        position: "relative",
+        left: "50%",
+        right: "50%",
+        marginLeft: "-50vw",
+        marginRight: "-50vw",
+      }}
+    >
+      <Container
+        maxWidth="lg"
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          flexDirection: "column",
+          mt: 5,
+          pb: 10,
+        }}
+      >
+        <h2>Work experience</h2>
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+          <Box sx={{ flex: { xs: "1 1 100%", md: "1 1 calc(50% - 16px)" } }}>
+            <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
+              <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                <Code sx={{ color: "primary.main", mr: 2 }} />
+                <Typography variant="h5" component="h3">
+                  Frontend Developer
+                </Typography>
+              </Box>
+              <Typography
+                variant="h6"
+                color="text.secondary"
+                sx={{ mb: 1, fontSize: 18 }}
+              >
+                Summer internship at Bouvet ASA
+              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
+                <CalendarToday
+                  sx={{ fontSize: 16, mr: 1, color: "text.secondary" }}
+                />
+                <Typography variant="body2" color="text.secondary">
+                  June/July 2025
+                </Typography>
+              </Box>
+              <Typography variant="body1">
+                Working in a team of both developers and designers, we developed
+                a tool for BaneNOR to support the handling of deviations during
+                planned railway closures. Primarily using React and related
+                libraries. Worked on implementing design, logic, and API
+                integration.
+              </Typography>
+            </Paper>
+          </Box>
+          <Box sx={{ flex: { xs: "1 1 100%", md: "1 1 calc(50% - 16px)" } }}>
+            <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
+              <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                <Work sx={{ color: "primary.main", mr: 2 }} />
+                <Typography variant="h5" component="h3">
+                  Cyber Security Analyst
+                </Typography>
+              </Box>
+              <Typography
+                variant="h6"
+                color="text.secondary"
+                sx={{ mb: 1, fontSize: 18 }}
+              >
+                Norwegian Security Authority (NSM)
+              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
+                <CalendarToday
+                  sx={{ fontSize: 16, mr: 1, color: "text.secondary" }}
+                />
+                <Typography variant="body2" color="text.secondary">
+                  August 2025 - Present
+                </Typography>
+              </Box>
+              <Typography variant="body1">
+                Handling security incidents and analyzing network and log data
+                at the Norwegian National Cyber Security Centre (NCSC).
+              </Typography>
+            </Paper>
+          </Box>
+        </Box>
+        <Typography sx={{ mt: 15, mb: 5, color: "text.secondary" }}>
+          Only work experience relevant to my ongoing degree is listed here.
+          Feel free to contact me for my full CV.
+        </Typography>
+      </Container>
+    </Box>
+  );
+}

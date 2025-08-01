@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Navbar } from "./sections/Navbar";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
+import { WorkExperience } from "./sections/Work";
 
 const theme = createTheme({
   palette: {
@@ -21,6 +22,7 @@ function App() {
       <Navbar />
       <Hero />
       <Projects />
+      <WorkExperience />
     </ThemeProvider>
   );
 }
