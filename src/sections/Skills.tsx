@@ -49,8 +49,8 @@ export function Skills() {
           display: "flex",
           alignItems: "flex-start",
           flexDirection: "column",
-          mt: 5,
-          pb: 10,
+          mt: 20,
+          mb: 20,
         }}
       >
         <h2>Technical skills</h2>
@@ -65,8 +65,13 @@ export function Skills() {
               }}
             >
               <Paper
-                elevation={3}
-                sx={{ p: 3, height: "80%", borderRadius: 3 }}
+                elevation={0}
+                sx={{
+                  p: 3,
+                  height: "80%",
+                  borderRadius: 3,
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.12)",
+                }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
                   {React.cloneElement(category.icon, {

@@ -1,4 +1,5 @@
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Box, IconButton } from "@mui/material";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 export function Hero() {
   return (
@@ -7,7 +8,7 @@ export function Hero() {
       maxWidth="lg"
       sx={{
         display: "flex",
-        minHeight: "85vh",
+        minHeight: "100vh",
         alignItems: "flex-start",
         justifyContent: "center",
         flexDirection: "column",
@@ -21,6 +22,37 @@ export function Hero() {
         also have experience in web development and graphic design from my
         previous bachelor’s degree in media and communication.{" "}
       </Typography>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 30,
+          left: "50%",
+          transform: "translateX(-50%)",
+          "@keyframes bounce": {
+            "0%, 20%, 50%, 80%, 100%": {
+              transform: "translateX(-50%) translateY(0)",
+            },
+            "40%": {
+              transform: "translateX(-50%) translateY(-10px)",
+            },
+            "60%": {
+              transform: "translateX(-50%) translateY(-5px)",
+            },
+          },
+          animation: "bounce 2s infinite",
+        }}
+      >
+        <IconButton
+          onClick={() =>
+            document
+              .getElementById("skills")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          sx={{ color: "gray" }}
+        >
+          <KeyboardArrowDown fontSize="large" />
+        </IconButton>
+      </Box>
     </Container>
   );
 }
