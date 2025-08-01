@@ -6,10 +6,11 @@ export function Hero() {
       maxWidth="lg"
       sx={{
         display: "flex",
-        minHeight: "100vh",
+        minHeight: "85vh",
         alignItems: "flex-start",
         justifyContent: "center",
         flexDirection: "column",
+        pb: { xs: 8, md: 10 },
       }}
     >
       <h1>Maria Granli</h1>
