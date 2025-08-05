@@ -55,6 +55,7 @@ export function Projects() {
                 height="200"
                 image="/weather.jpg"
                 alt="Weather App"
+                sx={{ objectPosition: "top" }}
               />
               <CardContent>
                 <Typography variant="h5" component="h3" sx={{ mb: 2 }}>

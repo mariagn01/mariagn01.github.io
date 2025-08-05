@@ -101,8 +101,8 @@ export function WorkExperience() {
                 </Typography>
               </Box>
               <Typography variant="body1">
-                Handling security incidents and analyzing network and log data
-                at the Norwegian National Cyber Security Centre (NCSC).
+                Alongside my studies, I work part time with cyber security for
+                the National Cyber Security Centre (NCSC).
               </Typography>
             </Paper>
           </Box>
