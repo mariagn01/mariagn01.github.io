@@ -22,8 +22,8 @@ export function WorkExperience() {
           display: "flex",
           alignItems: { xs: "center", md: "flex-start" },
           flexDirection: "column",
-          mt: { xs: 0, md: 20 },
-          mb: { xs: 10, md: 30 },
+          mt: { xs: 0, md: 15 },
+          mb: { xs: 10, md: 25 },
           px: { xs: 3, sm: 4, md: 3 },
         }}
       >

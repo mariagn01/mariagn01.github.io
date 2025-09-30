@@ -22,7 +22,7 @@ export function Contact() {
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
-          mt: { xs: 5, md: 20 },
+          mt: { xs: 5, md: 15 },
           mb: { xs: 15, md: 20 },
         }}
       >

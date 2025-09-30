@@ -49,8 +49,8 @@ export function Skills() {
           display: "flex",
           alignItems: { xs: "center", md: "flex-start" },
           flexDirection: "column",
-          mt: { xs: 5, md: 20 },
-          mb: { xs: 15, md: 30 },
+          mt: { xs: 5, md: 15 },
+          mb: { xs: 15, md: 25 },
           px: { xs: 3, sm: 4, md: 3 },
         }}
       >
