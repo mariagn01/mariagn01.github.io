@@ -102,7 +102,7 @@ export function WorkExperience() {
               </Box>
               <Typography variant="body1">
                 Alongside my studies, I work part time with cyber security for
-                the National Cyber Security Centre (NCSC).
+                the Norwegian Security Authority.
               </Typography>
             </Paper>
           </Box>

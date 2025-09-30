@@ -38,7 +38,12 @@ export function Navbar() {
       <AppBar
         position="fixed"
         color="transparent"
-        sx={{ bgcolor: "transparent", boxShadow: 0 }}
+        sx={{
+          bgcolor: "rgba(240, 240, 240, 0.7)", // semi-transparent dark
+          backdropFilter: "blur(8px)", // blur background
+          boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+          borderBottom: "1px solid rgba(255,255,255,0.1)",
+        }}
       >
         <Toolbar sx={{ justifyContent: "flex-end" }}>
           <Box
