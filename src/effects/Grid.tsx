@@ -22,14 +22,14 @@ export default function Grid() {
     cell.style.backgroundColor = color;
 
     setTimeout(() => {
-      cell.style.backgroundColor = "transparent"; // very subtle base state
+      cell.style.backgroundColor = "transparent";
     }, 800);
   };
 
   return (
     <Box
       sx={{
-        display: "flex",
+        display: { xs: "none", md: "flex" },
         alignItems: "center",
         justifyContent: "flex-end",
         position: "absolute",
