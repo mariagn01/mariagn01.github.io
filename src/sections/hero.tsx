@@ -1,5 +1,6 @@
 import { Container, Typography, Box, IconButton } from "@mui/material";
 import { KeyboardArrowDown } from "@mui/icons-material";
+import Grid from "../effects/Grid";
 
 export function Hero() {
   return (
@@ -8,20 +9,27 @@ export function Hero() {
       maxWidth="lg"
       sx={{
         display: "flex",
-        minHeight: "100vh",
+        minHeight: "96vh",
         alignItems: "flex-start",
         justifyContent: "center",
         flexDirection: "column",
         pb: { xs: 15, md: 10 },
       }}
     >
-      <h1>Maria Granli</h1>
-      <Typography sx={{ fontSize: { xs: "18px", sm: "24px", md: "24px" } }}>
-        I’m a software engineering student from Oslo, currently in my third
+      <h1 style={{ position: "relative", zIndex: 2 }}>Maria Granli</h1>
+      <Typography
+        sx={{
+          fontSize: { xs: "18px", sm: "24px", md: "24px" },
+          position: "relative",
+          zIndex: 2,
+        }}
+      >
+        I'm a software engineering student from Oslo, currently in my third
         year, working on developing my technical understanding and skills. I
         also have experience in web development and graphic design from my
-        previous bachelor’s degree in media and communication.{" "}
+        previous bachelor's degree in media and communication.{" "}
       </Typography>
+      <Grid />
       <Box
         sx={{
           position: "absolute",
@@ -49,7 +57,7 @@ export function Hero() {
               ?.scrollIntoView({ behavior: "smooth" })
           }
           sx={{
-            color: "gray",
+            color: "primary.main",
             outline: "none",
             "&:focus": { outline: "none" },
           }}
