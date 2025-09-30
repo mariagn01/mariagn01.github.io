@@ -15,7 +15,7 @@ export function Projects() {
     <Box
       id="projects"
       sx={{
-        bgcolor: { xs: "bgcolor.default", md: "#fefefe" },
+        bgcolor: "background.paper",
         width: "100vw",
         height: "100%",
         position: "relative",

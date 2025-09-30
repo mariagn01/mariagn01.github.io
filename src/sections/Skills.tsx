@@ -33,7 +33,7 @@ export function Skills() {
     <Box
       id="skills"
       sx={{
-        bgcolor: { xs: "bgcolor.default", md: "#fefefe" },
+        bgcolor: "background.paper",
         width: "100vw",
         height: "100%",
         position: "relative",
@@ -93,7 +93,7 @@ export function Skills() {
                     <Chip
                       key={skill}
                       label={skill}
-                      color="default"
+                      color="primary"
                       variant="outlined"
                       sx={{ mb: 1 }}
                     />
