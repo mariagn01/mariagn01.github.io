@@ -37,6 +37,7 @@ export function WorkExperience() {
                 pb: { xs: 2, md: 3, lg: 4 },
                 height: "100%",
                 boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
+                bgcolor: "rgb(29, 45, 74)",
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
@@ -77,6 +78,7 @@ export function WorkExperience() {
                 pb: { xs: 2, md: 3, lg: 4 }, // Progressive increase
                 height: "100%",
                 boxShadow: "0 8px 20px rgba(0, 0, 0, 0.12)",
+                bgcolor: "rgb(29, 45, 74)",
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
@@ -102,7 +104,7 @@ export function WorkExperience() {
               </Box>
               <Typography variant="body1">
                 Alongside my studies, I work part time with cyber security for
-                the Norwegian Security Authority.
+                the National Cyber Security Centre (NCSC).
               </Typography>
             </Paper>
           </Box>

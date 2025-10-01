@@ -72,6 +72,7 @@ export function Skills() {
                   height: "80%",
                   borderRadius: 3,
                   boxShadow: "0 4px 20px rgba(0, 0, 0, 0.12)",
+                  bgcolor: "rgb(29, 45, 74)",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
